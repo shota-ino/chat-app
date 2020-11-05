@@ -1,39 +1,79 @@
+/* "親要素" */
 .wrapper {
   display: flex;
 }
 
-
+/* "左子要素" */
 .side-bar {
   background-color: #253141;
   width: 300px;
   height: 100vh;
 }
 
+/* 1 */
 .side-bar-header {
   height: 100px;
   padding: 0 20px;
+  background-color: #253141;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+.header-name a{
+  font-size: 16px;
+  color: #FAFAFA;
+  text-decoration: none;
+}
+
+.create-room {
+  font-size: 10px;
+}
+
+.create-room a {
+  border: 1px solid lightblue;
+  padding: 14px;
+  color: deepskyblue;
+  text-decoration: none;
+}
+
+/* 2 */
 .rooms {
   background-color: #2F3E51;
   height: calc(100vh - 100px);
   padding: 0 20px;
+  overflow: scroll;
 }
 
+.room {
+  padding: 20px 0 40px;
+}
 
+.room-name a {
+  text-decoration: none;
+  color: white;
+}
+
+/* "右子要素" */
 .chat {
   background-color: #ffffff;
   width: calc(100vw - 300px);
 }
 
+/* 3 */
 .chat-header {
   height: 100px;
   padding: 0 40px;
 }
+
+/* 4 */
 .messages {
   background-color: #FAFAFA;
   height: calc(100vh - 100px - 90px);
   padding: 46px 40px 0;
 }
+
+/* 5 */
 .form {
   background-color: #DDDDDD;
   height: 90px;
